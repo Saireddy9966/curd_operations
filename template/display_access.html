@@ -8,19 +8,19 @@
 </head>
 <body>
     <center>
-        <h1> Display WebPages</h1>
+        <h1> Display Access Records</h1>
         <table border="3px">
             <thead>
                 <tr>
-                    <th>Topics</th>
                     <th>Name</th>
-                    <th>url</th>
+                    <th>Author</th>
+                    <th>Date</th>
                 </tr>
-                {% for wo in web %}
+                {% for ao in accessr %}
                 <tr>
-                    <td>{{wo.topic_name}}</td>
-                    <td>{{wo.name}}</td>
-                    <td>{{wo.url}}</td>
+                    <td>{{ao.name}}</td>
+                    <td>{{ao.author}}</td>
+                    <td>{{ao.date}}</td>
                 </tr>
                 {% endfor %}
             </thead>
